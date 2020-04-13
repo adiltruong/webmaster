@@ -32,3 +32,9 @@ li a:hover {
 .active {
   background-color: #4CAF50;
 }
+
+.doge {
+  width: 400px;
+  height: auto;
+  padding: 10px;
+}
