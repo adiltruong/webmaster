@@ -3,57 +3,35 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    <title>Adil Truong Website</title>
+    <title>Adil Truong</title>
   </head>
   <body>
-    <header id="header">
-      <h1>Adil Truong</h1>
-      <p> Picture of Me</p>
-      <img src="me_and_soju.jpg"
-          alt="doge"
-          width ="400"
-          height="341"
-          title="corgi"/>
-      <p> and dog</p>
-    </header>
-    <h2>Tabs</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
+    <div class="nav-bar">
+			<ul>
+			   <li class='first'><a href='index.html'><span>About</span></a></li>
+			   <li><a href='experiences.html'><span>Experiences</span></a></li>
+			   <li><a href='videos.html'><span>Videos</span></a></li>
+			   <li class='end'><a href='orgs.html'><span>Orgs</span></a></li>
+			</ul>
+	  </div>
+  <div class="home">
+      <div>
+        <h1> Adil Truong </h1>
+      </div>
 
-    <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+      <div>
+        <div>
+          <img src="me_and_soju.jpg" class="doge">
+        </div>
+        <div>
+          <p>
+            Hi! I'm Adil, a 4th year at UCSB
+            <br />
+            <br />
+            Welcome to my portfolio
+          </p>
+        </div>
+      </div>
+  </div>
   </body>
 </html>
