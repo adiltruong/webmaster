@@ -29,10 +29,15 @@ li a:hover {
   background-color: #111;
 }
 
+#main {
+  display: flex
+}
+
 .active {
   background-color: #4CAF50;
 }
 
 .pic {
-  float: left
+  float: left;
+  padding: 20px;
 }
