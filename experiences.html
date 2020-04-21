@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 
 <html>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Adil Truong</title>
   </head>
   <body>
@@ -10,23 +12,24 @@
 			<ul>
 			   <li><a href='index.html'><span>About</span></a></li>
 			   <li class = "active"><a href='experiences.html'><span>Experiences</span></a></li>
-			   <li><a href='videos.html'><span>Videos</span></a></li>
+			   <li><a href='videos.html'><span>Gallery</span></a></li>
 			   <li class='end'><a href='contact.html'><span>Contact</span></a></li>
 			</ul>
 	  </div>
     <div>
       <div>
-        <h1> Experiences </h1>
+        <h1 style="text-align:center"> Experiences </h1>
       </div>
-      <div id="img">
+      <div class="row">
+        <div class="column">
         <img src="images/procore.png"
         width = 200
         height = auto
         class = "pic">
+    </div>
+        <div class="column">
+          <br />
         <p>
-          <br />
-          <br />
-          <br />
           <b> Procore Technologies </b>
             <br />
             <br />
@@ -35,18 +38,18 @@
             <br />
             Worked on Notifications Team. Mainly used Ruby on Rails
         </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
         <img src="images/wh.jpg"
         width = 200
         height = auto
         class = "pic">
+      </div>
+      <div class="column">
         <p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
             <b> WomxnHacks 2.0 </b>
             <br />
@@ -56,18 +59,17 @@
             <br />
             Chair of Internal and External affairs for womxn-inclusive hackathon at UCSB
         </p>
+      </div>
+    </div>
+    <div class= "row">
+      <div class= "column">
         <img src="images/ear.jpg"
         width = 200
         height = auto
         class = "pic">
+      </div>
+      <div class="column">
         <p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
             <b> Overheard at UCSB </b>
             <br />
@@ -78,6 +80,33 @@
             Founded group page of 20,000+ users for UCSB community posts
         </p>
       </div>
-      </div>
-   </body>
- </html>
+      <script>
+
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      var modal = document.getElementById('img01');
+
+// When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    </body>
+  </html>
